@@ -6,13 +6,19 @@
     <title>Design System Template</title>
     <style>
         /* CSS Reset and Base Styles */
+        @font-face {
+            font-family: "Alte Haas Grotesk";
+            src: url('/Users/declan/Documents/GitHub/BTU_Redesign/assets/alte_haas_grotesk/AlteHaasGroteskBold.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
         :root {
             /* Color Palette - 5 Core Colors */
-            --color-primary: #3498db;     /* Vibrant Blue - Main Brand Color */
-            --color-secondary: #2ecc71;   /* Emerald Green - Complementary Action Color */
-            --color-accent: #e74c3c;      /* Passionate Red - Highlight / Warning Color */
-            --color-neutral: #34495e;     /* Deep Slate Gray - Neutral Text and Background */
-            --color-highlight: #f1c40f;   /* Bright Yellow - Accent / Attention Color */
+            --color-primary: #003049;     /* Vibrant Blue - Main Brand Color */
+            --color-secondary: #d62828;   /* Emerald Green - Complementary Action Color */
+            --color-accent: #D66F00;  /* Passionate Red - Highlight / Warning Color */
+            --color-neutral: #C58402;     /* Deep Slate Gray - Neutral Text and Background */
+            --color-highlight:#FAFAF5;   /* Bright Yellow - Accent / Attention Color */
             
             /* Derived Colors for Flexibility */
             --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
@@ -24,11 +30,11 @@
             --font-secondary: 'Roboto Mono', monospace;
 
             /* Spacing System */
-            --spacing-xs: 0.25rem;
-            --spacing-sm: 0.5rem;
-            --spacing-md: 1rem;
-            --spacing-lg: 1.5rem;
-            --spacing-xl: 2rem;
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --spacing-xl: 48px;
 
             /* Border Radius */
             --radius-sm: 4px;
@@ -43,7 +49,7 @@
         }
 
         body {
-            font-family: var(--font-primary);
+            font-family: 'Alte Haas Grotesk', sans-serif;
             line-height: 1.6;
             background-color: var(--color-background);
             color: var(--color-text-dark);
@@ -118,8 +124,9 @@
         }
 
         .button:hover {
-            background-color: color-mix(in srgb, var(--color-primary) 80%, black);
-            border-color: var(--color-secondary);
+            background-color: var(--color-accent);
+            border-color: var(--color-primary);
+            border-width: 3px;
             transform: scale(1.05);
         }
 
@@ -137,12 +144,14 @@
         .link:hover {
             color: var(--color-accent);
             text-decoration: underline;
-            text-decoration-color: var(--color-highlight);
+            text-decoration-color: var(--color-accent);
         }
 
         .link:visited {
-            color: var(--color-neutral);
+            color: var(--color-highlight);
         }
+
+        
 
         /* Spacing Demonstration */
         .spacing-demo {
@@ -169,36 +178,36 @@
                 <div class="color-swatch" style="background-color: var(--color-primary); color: var(--color-text-light);">
                     <strong>Primary Color</strong>
                     <p>#3498db</p>
-                    <small>Contrast Ratio: 4.6:1</small>
+                    <small>Contrast Ratio: 13.82:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-secondary); color: var(--color-text-light);">
                     <strong>Secondary Color</strong>
                     <p>#2ecc71</p>
-                    <small>Contrast Ratio: 4.8:1</small>
+                    <small>Contrast Ratio: 5:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-accent); color: var(--color-text-light);">
                     <strong>Accent Color</strong>
                     <p>#e74c3c</p>
-                    <small>Contrast Ratio: 4.5:1</small>
+                    <small>Contrast Ratio: 3.24.1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-neutral); color: var(--color-text-light);">
                     <strong>Neutral Color</strong>
                     <p>#34495e</p>
-                    <small>Contrast Ratio: 4.7:1</small>
+                    <small>Contrast Ratio: 3.14.1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-highlight); color: var(--color-text-dark);">
                     <strong>Highlight Color</strong>
                     <p>#f1c40f</p>
-                    <small>Contrast Ratio: 4.9:1</small>
+                    <small>Contrast Ratio: 3.1</small>
                 </div>
             </div>
         </section>
 
         <section>
             <h2>Typography</h2>
-            <h1>Heading 1 - Space Grotesk</h1>
-            <h2>Heading 2 - Space Grotesk</h2>
-            <h3>Heading 3 - Space Grotesk</h3>
+            <h1>Heading 1 - Alte Haas Grotesk</h1>
+            <h2>Heading 2 - Alte Haas Grotesk</h2>
+            <h3>Heading 3 - Alte Haas Grotesk</h3>
             <p class="body-text">Body Text - Using Space Grotesk with a comfortable line height and readable size.</p>
             <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
         </section>
