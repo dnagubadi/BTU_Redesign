@@ -23,6 +23,10 @@
             --color-text-dark: var(--color-primary);
             --color-text-light: white;
 
+            /* Tool Area Colors - match the physical lab labels */
+            --color-tool-green: #2d6a4f;  /* 5.78:1 on background */
+            --color-tool-pink: #c2185b;   /* 5.31:1 on background */
+
             /* Typography */
             --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
             --font-secondary: 'Roboto Mono', monospace;
@@ -165,4 +169,255 @@
         .spacing-block {
             background-color: var(--color-primary);
             height: 50px;
+        }
+
+        /* ==========================================================
+           Site Components
+           ========================================================== */
+
+        /* Base elements */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--color-secondary);
+            text-underline-offset: 0.15em;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 3px;
+        }
+
+        main p,
+        main ul,
+        main ol,
+        main address {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        main ul,
+        main ol {
+            padding-left: var(--spacing-md);
+        }
+
+        main section,
+        main aside {
+            margin-bottom: var(--spacing-xl);
+        }
+
+        h4 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        /* Skip link - hidden until focused */
+        .skip-link {
+            position: absolute;
+            top: var(--spacing-sm);
+            left: var(--spacing-sm);
+            z-index: 10;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            border-radius: var(--radius-sm);
+            transform: translateY(-200%);
+        }
+
+        .skip-link:focus {
+            transform: none;
+        }
+
+        /* Header + primary navigation */
+        .site-header {
+            margin-bottom: var(--spacing-xl);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--color-neutral);
+        }
+
+        .site-header .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--spacing-sm) var(--spacing-lg);
+        }
+
+        .site-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .site-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--spacing-sm) var(--spacing-md);
+            list-style: none;
+        }
+
+        .site-nav a:not(.button) {
+            color: var(--color-primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .site-nav a:not(.button):hover,
+        .site-nav a[aria-current="page"] {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: var(--color-secondary);
+        }
+
+        /* Home hero */
+        .hero {
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            max-width: 40rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero__actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--spacing-sm) var(--spacing-lg);
+        }
+
+        /* Card grid - 3 columns down to 1 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .card {
+            padding: var(--spacing-md);
+            background-color: var(--color-highlight);
+            border: 2px solid var(--color-neutral);
+            border-radius: var(--radius-md);
+        }
+
+        /* Tool cards - whole card clickable via stretched link */
+        .tool-card {
+            position: relative;
+            padding: var(--spacing-md);
+            background-color: var(--color-highlight);
+            border: 2px solid var(--color-neutral);
+            border-left-width: var(--spacing-xs);
+            border-radius: var(--radius-md);
+        }
+
+        .tool-card--green { border-left-color: var(--color-tool-green); }
+        .tool-card--red   { border-left-color: var(--color-secondary); }
+        .tool-card--pink  { border-left-color: var(--color-tool-pink); }
+
+        .tool-card__label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .tool-card__title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .tool-card__title a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .tool-card__title a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius-md);
+        }
+
+        .tool-card:hover .tool-card__title a {
+            text-decoration: underline;
+            text-decoration-color: var(--color-secondary);
+        }
+
+        .tool-card__title a:focus-visible {
+            outline: none;
+        }
+
+        .tool-card__title a:focus-visible::after {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 3px;
+        }
+
+        .tool-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Tool page pieces */
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .callout {
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-md);
+            background-color: var(--color-highlight);
+            border: 2px solid var(--color-primary);
+            border-radius: var(--radius-md);
+        }
+
+        .callout h2 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Footer */
+        .site-footer {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 2px solid var(--color-neutral);
+        }
+
+        .site-footer h2 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .site-footer ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs) var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            list-style: none;
+        }
+
+        .site-footer p {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Small screens */
+        @media (max-width: 600px) {
+            body {
+                padding: var(--spacing-sm);
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
         }
