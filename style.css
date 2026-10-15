@@ -11,34 +11,28 @@
             font-style: normal;
         }
         :root {
-            /* Color Palette - 5 Core Colors */
-            --color-primary: #003049;     /* Vibrant Blue - Main Brand Color */
-            --color-secondary: #d62828;   /* Emerald Green - Complementary Action Color */
-            --color-accent: #D66F00;  /* Passionate Red - Highlight / Warning Color */
-            --color-neutral: #C58402;     /* Deep Slate Gray - Neutral Text and Background */
-            --color-highlight:#FAFAF5;   /* Bright Yellow - Accent / Attention Color */
-            
-            /* Derived Colors for Flexibility */
+            --color-primary: #003049;
+            --color-secondary: #d62828;
+            --color-accent: #D66F00;
+            --color-neutral: #C58402;
+            --color-highlight:#FAFAF5;
+
             --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
             --color-text-dark: var(--color-primary);
             --color-text-light: white;
 
-            /* Tool Area Colors - match the physical lab labels */
-            --color-tool-green: #2d6a4f;  /* 5.78:1 on background */
-            --color-tool-pink: #c2185b;   /* 5.31:1 on background */
+            --color-tool-green: #2d6a4f;
+            --color-tool-pink: #c2185b;
 
-            /* Typography */
             --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
             --font-secondary: 'Roboto Mono', monospace;
 
-            /* Spacing System */
             --spacing-xs: 8px;
             --spacing-sm: 16px;
             --spacing-md: 24px;
             --spacing-lg: 32px;
             --spacing-xl: 48px;
 
-            /* Border Radius */
             --radius-sm: 4px;
             --radius-md: 8px;
             --radius-lg: 12px;
@@ -63,7 +57,6 @@
             margin: 0 auto;
         }
 
-        /* Typography Styles */
         h1 {
             font-size: 3rem;
             font-weight: 700;
@@ -95,7 +88,6 @@
             color: color-mix(in srgb, var(--color-text-dark) 70%, transparent);
         }
 
-        /* Color Palette Section */
         .color-palette {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -113,7 +105,6 @@
             text-align: center;
         }
 
-        /* Component Styles */
         .button {
             display: inline-block;
             padding: var(--spacing-sm) var(--spacing-md);
@@ -158,7 +149,6 @@
             }
         }
 
-        /* Spacing Demonstration */
         .spacing-demo {
             display: flex;
             align-items: center;
@@ -171,11 +161,6 @@
             height: 50px;
         }
 
-        /* ==========================================================
-           Site Components
-           ========================================================== */
-
-        /* Base elements */
         img {
             max-width: 100%;
             height: auto;
@@ -213,7 +198,6 @@
             margin-bottom: var(--spacing-xs);
         }
 
-        /* Skip link - hidden until focused */
         .skip-link {
             position: absolute;
             top: var(--spacing-sm);
@@ -230,7 +214,6 @@
             transform: none;
         }
 
-        /* Header + primary navigation */
         .site-header {
             margin-bottom: var(--spacing-xl);
             padding-bottom: var(--spacing-md);
@@ -273,7 +256,6 @@
             text-decoration-color: var(--color-secondary);
         }
 
-        /* Home hero */
         .hero {
             display: grid;
             gap: var(--spacing-lg);
@@ -307,10 +289,9 @@
             gap: var(--spacing-sm) var(--spacing-lg);
         }
 
-        /* Card grid - 3 columns down to 1 */
         .card-grid {
             display: grid;
-            /* 16rem minimum per card, never more than 3 columns */
+
             grid-template-columns: repeat(auto-fit, minmax(min(100%, max(16rem, (100% - 2 * var(--spacing-md)) / 3)), 1fr));
             gap: var(--spacing-md);
             margin-bottom: var(--spacing-md);
@@ -323,7 +304,6 @@
             margin-bottom: 0;
         }
 
-        /* Numbered steps - open layout, no boxes */
         .steps {
             counter-reset: step;
         }
@@ -341,7 +321,7 @@
             font-size: 3rem;
             font-weight: 700;
             line-height: 1;
-            color: var(--color-accent);   /* large text only: 3.1:1 */
+            color: var(--color-accent);
         }
 
         .steps h3 {
@@ -352,18 +332,16 @@
             margin-bottom: 0;
         }
 
-        /* Tool cards - whole card clickable via stretched link */
         .tool-card {
             position: relative;
             padding: var(--spacing-md);
-            /* keep text aligned with colored cards, whose left border is wider */
+
             padding-left: calc(var(--spacing-md) + var(--spacing-xs) - 2px);
             background-color: var(--color-highlight);
             border: 2px solid var(--color-neutral);
             border-radius: var(--radius-md);
         }
 
-        /* Colored left bar = the physical label color (always also written as text) */
         .tool-card--green,
         .tool-card--red,
         .tool-card--pink {
@@ -419,7 +397,6 @@
             margin-bottom: 0;
         }
 
-        /* Tool page pieces */
         .back-link {
             display: inline-block;
             margin-bottom: var(--spacing-md);
@@ -458,7 +435,6 @@
             margin-bottom: var(--spacing-sm);
         }
 
-        /* Footer */
         .site-footer {
             margin-top: var(--spacing-xl);
             padding-top: var(--spacing-lg);
@@ -482,7 +458,6 @@
             margin-bottom: var(--spacing-sm);
         }
 
-        /* Small screens */
         @media (max-width: 600px) {
             body {
                 padding: var(--spacing-sm);
