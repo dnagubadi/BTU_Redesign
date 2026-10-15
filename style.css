@@ -295,7 +295,8 @@
         /* Card grid - 3 columns down to 1 */
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+            /* 16rem minimum per card, never more than 3 columns */
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, max(16rem, (100% - 2 * var(--spacing-md)) / 3)), 1fr));
             gap: var(--spacing-md);
             margin-bottom: var(--spacing-md);
             padding-left: 0;
@@ -313,10 +314,19 @@
         .tool-card {
             position: relative;
             padding: var(--spacing-md);
+            /* keep text aligned with colored cards, whose left border is wider */
+            padding-left: calc(var(--spacing-md) + var(--spacing-xs) - 2px);
             background-color: var(--color-highlight);
             border: 2px solid var(--color-neutral);
-            border-left-width: var(--spacing-xs);
             border-radius: var(--radius-md);
+        }
+
+        /* Colored left bar = the physical label color (always also written as text) */
+        .tool-card--green,
+        .tool-card--red,
+        .tool-card--pink {
+            padding-left: var(--spacing-md);
+            border-left-width: var(--spacing-xs);
         }
 
         .tool-card--green { border-left-color: var(--color-tool-green); }
@@ -357,7 +367,7 @@
             outline: none;
         }
 
-        .tool-card__title a:focus-visible::after {
+        .tool-card:has(.tool-card__title a:focus-visible) {
             outline: 3px solid var(--color-primary);
             outline-offset: 3px;
         }
