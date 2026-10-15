@@ -374,6 +374,23 @@
             color: var(--color-primary);
         }
 
+        .tool-label {
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-sm);
+            border-left: var(--spacing-xs) solid var(--color-neutral);
+            font-weight: 700;
+        }
+
+        .tool-label--green { border-left-color: var(--color-tool-green); }
+        .tool-label--red   { border-left-color: var(--color-secondary); }
+        .tool-label--pink  { border-left-color: var(--color-tool-pink); }
+
+        .tool-photo {
+            max-width: 40rem;
+            margin-bottom: var(--spacing-xl);
+            border-radius: var(--radius-md);
+        }
+
         .callout {
             margin-bottom: var(--spacing-xl);
             padding: var(--spacing-md);
