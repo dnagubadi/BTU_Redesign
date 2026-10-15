@@ -57,6 +57,12 @@
             margin: 0 auto;
         }
 
+        .sideContainer {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);            
+        }
+
         h1 {
             font-size: 3rem;
             font-weight: 700;
@@ -419,6 +425,12 @@
             width: 100%;
             max-width: 40rem;
             margin-bottom: var(--spacing-xl);
+            border-radius: var(--radius-md);
+        }
+
+        .headshot {
+            margin-top: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
             border-radius: var(--radius-md);
         }
 
