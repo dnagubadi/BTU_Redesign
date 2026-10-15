@@ -275,6 +275,9 @@
 
         /* Home hero */
         .hero {
+            display: grid;
+            gap: var(--spacing-lg);
+            align-items: center;
             margin-bottom: var(--spacing-xl);
         }
 
@@ -283,6 +286,18 @@
             line-height: 1.4;
             max-width: 40rem;
             margin-bottom: var(--spacing-md);
+        }
+
+        .hero__image {
+            width: 100%;
+            border-radius: var(--radius-lg);
+        }
+
+        @media (min-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--spacing-xl);
+            }
         }
 
         .hero__actions {
@@ -308,14 +323,28 @@
             margin-bottom: 0;
         }
 
-        .card {
-            padding: var(--spacing-md);
-            background-color: var(--color-highlight);
-            border: 2px solid var(--color-neutral);
-            border-radius: var(--radius-md);
+        /* Numbered steps - open layout, no boxes */
+        .steps {
+            counter-reset: step;
         }
 
-        .card p:last-child {
+        .steps > li {
+            counter-increment: step;
+            padding-top: var(--spacing-md);
+            border-top: 3px solid var(--color-primary);
+        }
+
+        .steps > li::before {
+            content: counter(step, decimal-leading-zero);
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--color-accent);   /* large text only: 3.1:1 */
+        }
+
+        .steps > li p:last-child {
             margin-bottom: 0;
         }
 
