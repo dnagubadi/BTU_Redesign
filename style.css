@@ -303,11 +303,20 @@
             list-style: none;
         }
 
+        .card-grid > section,
+        .card-grid > aside {
+            margin-bottom: 0;
+        }
+
         .card {
             padding: var(--spacing-md);
             background-color: var(--color-highlight);
             border: 2px solid var(--color-neutral);
             border-radius: var(--radius-md);
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
         }
 
         /* Tool cards - whole card clickable via stretched link */
@@ -343,6 +352,7 @@
 
         .tool-card__title {
             font-size: 1.5rem;
+            font-weight: 700;
             margin-bottom: var(--spacing-xs);
         }
 
