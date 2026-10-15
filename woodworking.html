@@ -5,38 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wood Shop | BTU Lab</title>
     <link rel="icon" type="image/jpeg" href="images/btu-lab.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>BTU Lab</h1>
-        <p>Blow. Things. Up.</p>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="site-brand" href="index.html">BTU Lab</a>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html" aria-current="page">Tools</a></li>
+                    <li><a class="button" href="calendar.html">Book orientation</a></li>
+                    <li><a href="mailto:atlasbtulab@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="woodworking.html" aria-current="page">Wood Shop</a></li>
-            <li><a href="lasers.html">Lasers</a></li>
-            <li><a href="tools.html">Tools</a></li>
-        </ul>
-    </nav>
+    <main id="main" class="container">
+        <a class="back-link" href="tools.html">&larr; Back to all tools</a>
 
-    <main>
-        <h2>Wood Shop</h2>
-        <img src="images/btu-lab.jpg" alt="Placeholder photo of the BTU Lab wood shop and its equipment">
-        <p>The Wood Shop entrance is marked <strong>pink</strong>. Inside, tools follow their own color-coded system.</p>
+        <h1>Wood Shop</h1>
 
-        <section aria-label="wood-access-heading">
-            <h3 id="wood-access-heading">Access &amp; Orientation</h3>
+        <p class="tool-label tool-label--pink">The Wood Shop entrance is marked <strong>pink</strong>. Inside, tools follow their own color-coded system.</p>
+
+        <section class="callout" aria-labelledby="wood-access-heading">
+            <h2 id="wood-access-heading">Access &amp; Orientation</h2>
             <p>Wood Shop access is separate from general BTU access and requires a dedicated orientation, regardless of past experience. The orientation schedule is posted on the BTU Lab Calendar and is run by the BTU Mischief Makers.</p>
             <p>Access to certain machines is facilitated by BTU Mischief Makers &mdash; experienced community members and staff who can help you learn. Anyone can become a Mischief Maker on any machine.</p>
             <p>For safety, major equipment (table saw, band saw, belt sander, chop saw, and drill press) is powered off daily between 10pm and 6am. Tampering with the power timers is considered a serious safety violation.</p>
+            <a class="button" href="calendar.html">Book a Wood Shop orientation</a>
         </section>
 
-        <section aria-label="wood-equipment-heading">
-            <h3 id="wood-equipment-heading">Equipment</h3>
+        <img class="tool-photo" src="images/woodshop.jpg" width="1280" height="1113" loading="lazy"
+             alt="A wooden goblet turned from alternating light and dark wood, with a twisting stem, standing on a workbench">
+
+        <section aria-labelledby="wood-equipment-heading">
+            <h2 id="wood-equipment-heading">Equipment</h2>
             <article>
-                <h4>Power Equipment</h4>
+                <h3>Power Equipment</h3>
                 <ul>
                     <li>Table Saw</li>
                     <li>Band Saw</li>
@@ -49,7 +58,7 @@
                 </ul>
             </article>
             <article>
-                <h4>Hand Tools</h4>
+                <h3>Hand Tools</h3>
                 <ul>
                     <li>Hand Saws</li>
                     <li>Files</li>
@@ -59,8 +68,8 @@
             </article>
         </section>
 
-        <section aria-label="wood-safety-heading">
-            <h3 id="wood-safety-heading">Safety Policies</h3>
+        <section aria-labelledby="wood-safety-heading">
+            <h2 id="wood-safety-heading">Safety Policies</h2>
             <ul>
                 <li>Observe all safety rules without exception.</li>
                 <li>Do not work alone when no one could hear you if you needed assistance &mdash; stay in earshot.</li>
@@ -74,15 +83,30 @@
             </ul>
         </section>
 
-        <aside aria-label="wood-materials-heading">
-            <h3 id="wood-materials-heading">Materials Policy</h3>
-            <p>BTU Lab is not a free supply store. There are many ways to barter for materials &mdash; see the <a href="index.html#materials-heading">Home page</a> for details.</p>
+        <aside aria-labelledby="wood-materials-heading">
+            <h2 id="wood-materials-heading">Materials Policy</h2>
+            <p>BTU Lab is not a free supply store. There are many ways to barter for materials &mdash; see the <a href="index.html#materials-heading">materials policy on the Home page</a>.</p>
         </aside>
+
+        <a class="back-link" href="tools.html">&larr; Back to all tools</a>
     </main>
 
-    <footer>
-        <p>Contact BTU Lab: <a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a> 
-        <p><em>Class project note:</em> This site is a student redesign created for a web design course assignment. It is not the official BTU Lab website.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>Contact BTU Lab: <a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a></p>
+            <nav aria-labelledby="footer-more-heading">
+                <h2 id="footer-more-heading">More from BTU</h2>
+                <ul>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="rules-policies.html">Lab rules &amp; policies</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="mischief-makers.html">Mischief Makers</a></li>
+                    <li><a href="help-us.html">Help us blow things up</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                </ul>
+            </nav>
+            <p><em>Class project note:</em> This site is a student redesign created for a web design course assignment. It is not the official BTU Lab website.</p>
+        </div>
     </footer>
 </body>
 </html>
