@@ -1,0 +1,170 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "tool-template.html"
+        ],
+        "createdAt": "2026-10-15T05:08:45.050Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "page-template.html"
+        ],
+        "createdAt": "2026-10-15T05:08:45.086Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "general-tools.html"
+        ],
+        "createdAt": "2026-10-15T05:17:18.731Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "tools.html"
+        ],
+        "createdAt": "2026-10-15T05:22:18.816Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "tools.html"
+        ],
+        "createdAt": "2026-10-15T05:23:00.995Z",
+        "reason": "False positive: static detector can't resolve calc(var(--spacing-md) + var(--spacing-xs) - 2px) on .tool-card; rendered padding-left is 30px, text inset 32px (measured in Chromium)"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-15T05:24:21.043Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "lasers.html"
+        ],
+        "createdAt": "2026-10-15T05:40:20.920Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "woodworking.html"
+        ],
+        "createdAt": "2026-10-15T05:40:20.955Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "sewing-textiles.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.749Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "electronics.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.783Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "3d-printers.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.816Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "cnc.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.848Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "calendar.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.880Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "rules-policies.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.911Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "workshops.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.947Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "mischief-makers.html"
+        ],
+        "createdAt": "2026-10-15T05:40:54.983Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "help-us.html"
+        ],
+        "createdAt": "2026-10-15T05:40:55.016Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "faculty.html"
+        ],
+        "createdAt": "2026-10-15T05:40:55.047Z",
+        "reason": "Existing design system: --color-background in style.css (pre-session, from wa6 assignment); user's brief requires reusing existing tokens and forbids new colors"
+      }
+    ]
+  }
+}
