@@ -344,6 +344,10 @@
             color: var(--color-accent);   /* large text only: 3.1:1 */
         }
 
+        .steps h3 {
+            color: var(--color-primary);
+        }
+
         .steps > li p:last-child {
             margin-bottom: 0;
         }
