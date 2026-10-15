@@ -386,6 +386,7 @@
         .tool-label--pink  { border-left-color: var(--color-tool-pink); }
 
         .tool-photo {
+            width: 100%;
             max-width: 40rem;
             margin-bottom: var(--spacing-xl);
             border-radius: var(--radius-md);
