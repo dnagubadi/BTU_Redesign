@@ -12,23 +12,27 @@
 
     <header class="site-header">
         <div class="container">
-            <a class="site-brand" href="index.html">BTU Lab</a>
+            <a class="site-brand" href="index.html" aria-current="page"><img class="site-brand__logo" src="images/btu-logo.png" width="48" height="48" alt="">BTU Lab</a>
             <nav class="site-nav" aria-label="Primary">
                 <ul>
-                    <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="tools.html">Tools</a></li>
-                    <li><a class="button" href="calendar.html">Book orientation</a></li>
-                    <li><a href="mailto:atlasbtulab@gmail.com">Contact</a></li>
+                    <li><a href="mischief-makers.html">Mischief Makers</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="rules-policies.html">Rules &amp; Policies</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="help-us.html">Help Us</a></li>
+                    <li class="site-nav__cta"><a class="button" href="calendar.html">Calendar</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main id="main" class="container">
+
         <section class="hero" aria-labelledby="hero-heading">
             <div class="hero__text">
                 <h1 id="hero-heading">Blow. Things. Up.</h1>
-                <p>The ATLAS BTU Lab is an inclusive community makerspace facilitating projects at the intersection of Art, Design, Engineering, and Architecture.</p>
+                <p>The ATLAS BTU Lab is an inclusive community makerspace facilitating projects at the intersection of Art, Design, Engineering and Architecture. It serves multiple functions as a general workspace, and workshop host.</p>
                 <div class="hero__actions">
                     <a class="button" href="tools.html">Browse tools</a>
                     <a href="calendar.html">Book an orientation &rarr;</a>
@@ -42,17 +46,18 @@
             <h2 id="start-heading">Getting started</h2>
             <ol class="card-grid steps">
                 <li>
-                    <h3>Who can join?</h3>
-                    <p>Anyone can gain access to BTU. Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental and productive space.</p>
-                    <p>Due to increased campus security, BTU Lab is currently unable to sponsor BuffOne Guest cards.</p>
+                    <h3>Who?</h3>
+                    <p>Anyone* can gain access to BTU. Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental and productive space.</p>
+                    <p class="footnote">*Due to increased campus security, we are currently unable to sponsor BuffOne Guest cards.</p>
                 </li>
                 <li>
-                    <h3>How it works</h3>
-                    <p>New members attend a 20-minute general orientation covering community expectations, safety, and equipment.</p>
+                    <h3>How?</h3>
+                    <p>New members attend a 20 minute general orientation covering community expectations, safety and equipment.</p>
                 </li>
                 <li>
-                    <h3>When to come in</h3>
-                    <p>The orientation schedule and all scheduled events are posted on the <a href="calendar.html">BTU Lab Calendar</a>. Some equipment, including the wood shop and laser cutters, requires its own separate orientation &mdash; see the <a href="woodworking.html">Wood Shop</a> and <a href="lasers.html">Lasers</a> pages for details.</p>
+                    <h3>When?</h3>
+                    <p>The orientation* schedule, and all scheduled events can be found on the <a href="calendar.html">BTU Calendar</a>.</p>
+                    <p class="footnote">[*Some things involve separate orientations...like <a href="lasers.html">lasers</a> and stuff. Check the calendar and the <a href="tools.html">tool pages</a> for your interests.]</p>
                 </li>
             </ol>
         </section>
@@ -79,39 +84,75 @@
             <p><a href="tools.html">See all tools &rarr;</a></p>
         </section>
 
-        <div class="card-grid">
+        <div class="split">
             <section aria-labelledby="visit-heading">
-                <h2 id="visit-heading">Visit us</h2>
+                <h2 id="visit-heading">And, finally...where?</h2>
                 <address>
-                    ATLAS Institute, Room 320 UCB<br>
+                    ATLAS Institute<br>
+                    320 UCB<br>
                     1125 18th St<br>
                     Boulder, CO 80309
                 </address>
-                <p>Questions? Email BTU Lab at <a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a>.</p>
+                <iframe class="embed embed--map" src="https://maps.google.com/maps?hl=en-US&amp;ll=40.007575,-105.269933&amp;output=embed&amp;q=ATLAS+Institute,+University+of+Colorado+Boulder,+1125+18th+St,+Boulder,+CO+80309&amp;z=17" loading="lazy"
+                        title="Map showing the ATLAS Institute at the University of Colorado Boulder"></iframe>
             </section>
 
-            <aside aria-labelledby="materials-heading">
-                <h2 id="materials-heading">Materials policy</h2>
-                <p>BTU Lab is not a free supply store. But there are many ways to barter, including displaying your work in BTU, tagging the lab in social media, offering workshops, or volunteering to organize supplies. If you need something, give something in return.</p>
-            </aside>
+            <div>
+                <section aria-labelledby="questions-heading">
+                    <h2 id="questions-heading">Uh..what?</h2>
+                    <p>Questions: email BTU Lab at <a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a>.</p>
+                    <p>Follow along on Instagram: <a href="https://www.instagram.com/btulab_cu/">@btulab_cu</a></p>
+                </section>
+
+                <aside class="callout" aria-labelledby="materials-heading">
+                    <h2 id="materials-heading">Materials policy</h2>
+                    <p>BTU LAB IS NOT A FREE SUPPLY STORE. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.</p>
+                </aside>
+            </div>
         </div>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>Contact BTU Lab: <a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a></p>
-            <nav aria-labelledby="footer-more-heading">
-                <h2 id="footer-more-heading">More from BTU</h2>
-                <ul>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="rules-policies.html">Lab rules &amp; policies</a></li>
-                    <li><a href="workshops.html">Workshops</a></li>
-                    <li><a href="mischief-makers.html">Mischief Makers</a></li>
-                    <li><a href="help-us.html">Help us blow things up</a></li>
-                    <li><a href="faculty.html">Faculty</a></li>
-                </ul>
-            </nav>
-            <p><em>Class project note:</em> This site is a student redesign created for a web design course assignment. It is not the official BTU Lab website.</p>
+            <div class="footer-grid">
+                <section aria-labelledby="footer-visit-heading">
+                    <h2 id="footer-visit-heading">Visit BTU Lab</h2>
+                    <address>
+                        ATLAS Institute<br>
+                        320 UCB<br>
+                        1125 18th St<br>
+                        Boulder, CO 80309
+                    </address>
+                    <p><a href="mailto:atlasbtulab@gmail.com">atlasbtulab@gmail.com</a></p>
+                    <p><a href="https://www.instagram.com/btulab_cu/">Instagram: @btulab_cu</a></p>
+                </section>
+                <nav aria-labelledby="footer-tools-heading">
+                    <h2 id="footer-tools-heading">Tools</h2>
+                    <ul>
+                        <li><a href="tools.html">All tools</a></li>
+                        <li><a href="general-tools.html">General Tools</a></li>
+                        <li><a href="woodworking.html">Wood Shop</a></li>
+                        <li><a href="sewing-textiles.html">Sewing &amp; Textiles</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="lasers.html">Lasers</a></li>
+                        <li><a href="3d-printers.html">3D Printers</a></li>
+                        <li><a href="cnc.html">CNC</a></li>
+                    </ul>
+                </nav>
+                <nav aria-labelledby="footer-lab-heading">
+                    <h2 id="footer-lab-heading">The Lab</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calendar.html">BTU Lab Calendar</a></li>
+                        <li><a href="mischief-makers.html">BTU Mischief Makers</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="rules-policies.html">Lab Rules &amp; Policies</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="help-us.html">Help Us Blow Things Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer-note"><em>Class project note:</em> This site is a student redesign created for a web design course assignment. It is not the official BTU Lab website.</p>
         </div>
     </footer>
 </body>
