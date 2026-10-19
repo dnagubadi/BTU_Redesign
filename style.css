@@ -479,3 +479,47 @@
                 font-size: 2rem;
             }
         }
+
+        .staff-card {
+            padding: var(--spacing-md);
+            background-color: var(--color-highlight);
+            border: 2px solid var(--color-neutral);
+            border-radius: var(--radius-md);
+        }
+
+        .staff-card-photo {
+            aspect-ratio: 1;
+            margin-bottom: 10px;
+            border-radius: var(--radius-sm);
+            object-fit: cover;
+            width: 30%;
+            justify-content: right;
+            
+        }
+
+        .staff-card-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: var(--color-primary);
+        }
+
+        .staff-card-role {
+            font-weight: 700;
+            color: var(--color-secondary);
+        }
+
+        .staff-card-details dt {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .staff-card-details dd {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .staff-card-details dd:last-child {
+            margin-bottom: 0;
+        }
