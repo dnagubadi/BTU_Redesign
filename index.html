@@ -7,6 +7,7 @@
     <link rel="icon" type="image/jpeg" href="images/btu-lab.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
+<
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
 
@@ -19,7 +20,7 @@
                     <li><a href="mischief-makers.html">Staff</a></li>
                     <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="rules-policies.html">Rules &amp; Policies</a></li>
-                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="faculty.html">For Faculty</a></li>
                     <li><a href="help-us.html">Help Us</a></li>
                     <li class="site-nav__cta"><a class="button" href="calendar.html">Calendar</a></li>
                 </ul>
@@ -47,7 +48,7 @@
             <ol class="card-grid steps">
                 <li>
                     <h3>Who?</h3>
-                    <p>Anyone* can gain access to BTU. Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental and productive space.</p>
+                    <p>Anyone* can gain access to BTU. Whether you sketch your ideas on <button type="button" id="font-button">Papyrus</button> or make them up as you go, BTU is the perfect place for you. Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental and productive space.</p>
                     <p class="footnote">*Due to increased campus security, we are currently unable to sponsor BuffOne Guest cards.</p>
                 </li>
                 <li>
@@ -155,5 +156,12 @@
             <p class="footer-note"><em>Class project note:</em> This site is a student redesign created for a web design course assignment. It is not the official BTU Lab website.</p>
         </div>
     </footer>
+    <script>
+        const button = document.getElementById('font-button');
+        button.addEventListener('click', () => {
+            const enabled = document.body.classList.toggle('papyrus-mode');
+            button.setAttribute("aria-pressed", enabled);
+        });
+    </script>
 </body>
 </html>
