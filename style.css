@@ -865,3 +865,10 @@
 
             .embed--agenda {
                 display: block;
+            }
+
+            .signature img {
+                width: 88px;
+                height: 88px;
+            }
+        }
