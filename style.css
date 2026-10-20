@@ -754,6 +754,11 @@
             aspect-ratio: 1;
             object-fit: cover;
             border-radius: var(--radius-md);
+            margin-bottom: 20px;
+        }
+
+        .staff-card--featured .staff-card-photo {
+             margin-bottom: 0px;
         }
 
         .staff-card-name {
